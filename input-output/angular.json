@@ -32,9 +32,12 @@
               }
             ],
             "styles": [
-              "src/styles.scss"
+              "src/styles.scss",
+              "node_modules/semantic-ui-css/semantic.min.css"
             ],
-            "scripts": []
+            "scripts": [
+              "node_modules/semantic-ui-css/semantic.min.js"
+            ]
           },
           "configurations": {
             "production": {
