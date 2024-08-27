@@ -1,0 +1,30 @@
+<div class="ui raised segment">
+    <h2 class="ui header">Product Form: Using Builder</h2>
+    <form (ngSubmit)="onSubmit()" class="ui form">
+        <div class="field">
+            <label for="skuInput">SKU</label>
+            <input type="text" id="skuInput" placeholder="SKU" name="sku" [(ngModel)]="product.sku">
+        </div>
+        <div class="field">
+            <label for="name">Product Name</label>
+            <input type="text" id="name" placeholder="Product Name" name="name" [(ngModel)]="product.name">
+        </div>
+        <div class="field">
+            <label for="description">Product Description</label>
+            <input type="text" id="description" placeholder="Product Description" name="description" [(ngModel)]="product.description">
+        </div>
+        <div class="field">
+            <label for="dept">Departments</label>
+            <input type="text" id="dept" placeholder="Departments" name="dept" [(ngModel)]="productDept">
+        </div>
+        <div class="field">
+            <label for="price">Product Price</label>
+            <input type="number" id="price" placeholder="Product Price" name="price" [(ngModel)]="product.price">
+        </div>
+        <div class="field">
+            <label for="size">Product Size</label>
+            <input type="number" id="size" placeholder="Product Size" name="size" [(ngModel)]="product.size">
+        </div>
+        <button type="submit" class="ui button primary">Submit</button>
+    </form>
+</div>
